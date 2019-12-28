@@ -8,5 +8,5 @@ command = "rtsp://" + str(user) + ":" + str(passw) + "@" + str(ip) + ":554/cam/r
 #rtsp://admin:cltadmin12@192.168.1.121:554/cam/realmonitor?channel=1&subtype=1
 command_s = "vlc "
 command_t = command_s + "\"" + command + "\""
-print(command_t)
+print("Opening Stream:- " + command)
 os.system(command_t)
